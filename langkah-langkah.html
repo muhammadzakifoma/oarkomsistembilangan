@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Langkah-langkah Konversi Sistem Bilangan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #5b9bd5;
+            border-bottom: 2px solid #5b9bd5;
+            padding-bottom: 5px;
+        }
+        ul {
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+        .example {
+            background-color: #e6f7ff;
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 4px solid #007acc;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Langkah-langkah Konversi Sistem Bilangan</h1>
+
+    <h2>1. Konversi Desimal ke Biner</h2>
+    <ul>
+        <li><strong>Langkah 1:</strong> Bagi angka desimal dengan 2.</li>
+        <li><strong>Langkah 2:</strong> Catat sisa pembagian (0 atau 1).</li>
+        <li><strong>Langkah 3:</strong> Lanjutkan pembagian hasil sebelumnya dengan 2 hingga hasilnya 0.</li>
+        <li><strong>Langkah 4:</strong> Susun sisa pembagian dari bawah ke atas untuk mendapatkan hasil biner.</li>
+    </ul>
+    <div class="example"><strong>Contoh:</strong> Desimal 25 → Biner 11001<sub>2</sub></div>
+
+    <h2>2. Konversi Desimal ke Oktal</h2>
+    <ul>
+        <li><strong>Langkah 1:</strong> Bagi angka desimal dengan 8.</li>
+        <li><strong>Langkah 2:</strong> Catat sisa pembagian.</li>
+        <li><strong>Langkah 3:</strong> Ulangi pembagian hingga hasilnya 0.</li>
+        <li><strong>Langkah 4:</strong> Susun sisa dari bawah ke atas untuk mendapatkan hasil oktal.</li>
+    </ul>
+    <div class="example"><strong>Contoh:</strong> Desimal 25 → Oktal 31<sub>8</sub></div>
+
+    <h2>3. Konversi Desimal ke Heksadesimal</h2>
+    <ul>
+        <li><strong>Langkah 1:</strong> Bagi angka desimal dengan 16.</li>
+        <li><strong>Langkah 2:</strong> Catat sisa pembagian (gunakan A-F untuk nilai di atas 9).</li>
+        <li><strong>Langkah 3:</strong> Ulangi pembagian hingga hasilnya 0.</li>
+        <li><strong>Langkah 4:</strong> Susun sisa dari bawah ke atas untuk mendapatkan hasil heksadesimal.</li>
+    </ul>
+    <div class="example"><strong>Contoh:</strong> Desimal 100 → Heksadesimal 64<sub>16</sub></div>
+
+    <h2>4. Konversi Biner ke Desimal</h2>
+    <ul>
+        <li><strong>Langkah 1:</strong> Kalikan setiap digit biner dengan pangkat 2, mulai dari kanan.</li>
+        <li><strong>Langkah 2:</strong> Jumlahkan hasil perkalian.</li>
+    </ul>
+    <div class="example"><strong>Contoh:</strong> Biner 1101 → Desimal 13<sub>10</sub></div>
+
+    <h2>5. Konversi Biner ke Oktal</h2>
+    <ul>
+        <li><strong>Langkah 1:</strong> Kelompokkan digit biner menjadi tiga-tiga dari kanan.</li>
+        <li><strong>Langkah 2:</strong> Konversi setiap grup menjadi nilai oktal.</li>
+    </ul>
+    <div class="example"><strong>Contoh:</strong> Biner 1101 → Oktal 15<sub>8</sub></div>
+
+    <h2>6. Konversi Biner ke Heksadesimal</h2>
+    <ul>
+        <li><strong>Langkah 1:</strong> Kelompokkan digit biner menjadi empat-empat dari kanan.</li>
+        <li><strong>Langkah 2:</strong> Konversi setiap grup menjadi nilai heksadesimal.</li>
+    </ul>
+    <div class="example"><strong>Contoh:</strong> Biner 1101 → Heksadesimal D<sub>16</sub></div>
+
+    <h2>7. Konversi Oktal ke Desimal</h2>
+    <ul>
+        <li><strong>Langkah 1:</strong> Kalikan setiap digit oktal dengan pangkat 8, mulai dari kanan.</li>
+        <li><strong>Langkah 2:</strong> Jumlahkan hasil perkalian.</li>
+    </ul>
+    <div class="example"><strong>Contoh:</strong> Oktal 31 → Desimal 25<sub>10</sub></div>
+
+    <h2>8. Konversi Oktal ke Biner</h2>
+    <ul>
+        <li><strong>Langkah 1:</strong> Ganti setiap digit oktal dengan tiga digit biner.</li>
+    </ul>
+    <div class="example"><strong>Contoh:</strong> Oktal 31 → Biner 11001<sub>2</sub></div>
+
+    <h2>9. Konversi Oktal ke Heksadesimal</h2>
+    <ul>
+        <li><strong>Langkah 1:</strong> Konversi oktal ke biner terlebih dahulu.</li>
+        <li><strong>Langkah 2:</strong> Kelompokkan biner menjadi empat-empat untuk konversi ke heksadesimal.</li>
+    </ul>
+    <div class="example"><strong>Contoh:</strong> Oktal 31 → Heksadesimal 19<sub>16</sub></div>
+
+    <h2>10. Konversi Heksadesimal ke Desimal</h2>
+    <ul>
+        <li><strong>Langkah 1:</strong> Kalikan setiap digit heksadesimal dengan pangkat 16, mulai dari kanan.</li>
+        <li><strong>Langkah 2:</strong> Jumlahkan hasil perkalian.</li>
+    </ul>
+    <div class="example"><strong>Contoh:</strong> Heksadesimal A9 → Desimal 169<sub>10</sub></div>
+
+    <h2>11. Konversi Heksadesimal ke Biner</h2>
+    <ul>
+        <li><strong>Langkah 1:</strong> Ganti setiap digit heksadesimal dengan empat digit biner.</li>
+    </ul>
+    <div class="example"><strong>Contoh:</strong> Heksadesimal A9 → Biner 10101001<sub>2</sub></div>
+
+    <h2>12. Konversi Heksadesimal ke Oktal</h2>
+    <ul>
+        <li><strong>Langkah 1:</strong> Konversi heksadesimal ke biner terlebih dahulu.</li>
+        <li><strong>Langkah 2:</strong> Kelompokkan biner menjadi tiga-tiga untuk konversi ke oktal.</li>
+    </ul>
+    <div class="example"><strong>Contoh:</strong> Heksadesimal A9 → Oktal 251<sub>8</sub></div>
+
+</body>
+</html>
